@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="google.com" method="POST">
     <table border="1">
         <tr>
             <td colspan="2">
@@ -16,48 +17,71 @@
             <td>
                 Họ và tên
             </td>
-            <td>4</td>
+            <td>
+                <input type="text" name="hoten">
+            </td>
         </tr>
         <tr>
             <td>
                 Ngày sinh
             </td>
-            <td>6</td>
+            <td>
+                <input type="date" name="namsinh">
+            </td>
         </tr>
         <tr>
             <td>
                 Giới tính
             </td>
-            <td>8</td>
+            <td>
+                <input type="radio" name="gioitinh"> Nam <input type="radio" name="gioitinh"> Nữ
+            </td>
         </tr>
         <tr>
             <td>
                 Địa chỉ
             </td>
-            <td>10</td>
+            <td>
+                <textarea name="diachi" cols="30" rows="5"></textarea>
+            </td>
         </tr>
         <tr>
             <td>
                 Lớp
             </td>
-            <td>12</td>
+            <td>
+                <select name="lop">
+                    <option value="none"> -Chọn lớp</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </td>
         </tr>
         <tr>
             <td>
                 Email
             </td>
-            <td>14</td>
+            <td>
+                <input type="email" name="email">
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                Điện thoại
+            </td>
+            <td>
+                <input type="tel" name="sodienthoai">
+            </td>
         </tr>
         <tr>
             <td>
-                Điện thoại
+                <input type="submit" value="Đăng ký"> <input type="reset" value="Nhập lại">
             </td>
-            <td>16</td>
-        </tr>
-        <tr>
-            <td>17</td>
-            <td>18</td>
         </tr>
     </table>
+</form>
 </body>
 </html>
